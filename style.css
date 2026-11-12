@@ -1,4 +1,3 @@
-/*Remove as margens padoes do navegador*/
 *{
     margin: 0;
     padding: 0;
@@ -71,48 +70,5 @@ form button{
 form button:hover{
     background-color: #4e3bb5;
 }
-/*
-Comando
 
-O que faz
-
-background-color
-
-Altera a cor de fundo
-
-color
-
-Altera a cor do texto
-
-padding
-
-Cria espaço interno
-
-margin
-
-Cria espaço externo
-
-display: flex
-
-Organiza elementos de forma flexível
-
-justify-content
-
-Distribui os elementos horizontalmente
-
-align-items
-
-Alinha elementos
-
-border-radius
-
-Arredonda as bordas
-
-font-size
-
-Altera o tamanho do texto
-
-width
-
-Define a largura /*
 
