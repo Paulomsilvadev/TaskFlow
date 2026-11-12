@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | TaskFlow</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> <!--biblioteca de icons-->
+
+    <link rel="stylesheet" href='cadastro.css'>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1>Cadastro TaskFlow</h1>
+
+            <div class ="input-box">
+                <input id="nome" placeholder="Nome" type="text">
+                <i class="bx bxs-user"></i> 
+            </div>
+            <div class ="input-box">
+                <input id="email" placeholder="Email" type="email">
+                <i class="bx bxs-user"></i> 
+            </div>
+            <div class ="input-box">
+                <input id="senha" placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class ="input-box">
+                <input id="confirmarSenha" placeholder="Confirmar senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <button type="submit" class="cadastro">Cadastre-se</button>
+            <button type="button" id="btnLogin" class="login">Já tenho a conta</button>
+        
+        </form>t
+    </main>
+    <script src="cadastro.js"></script>
+</body>
+</html>
