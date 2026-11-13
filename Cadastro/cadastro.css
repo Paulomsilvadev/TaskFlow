@@ -89,7 +89,7 @@ body {
 }
 
 .cadastro:hover, .login:hover {
-    background-color: #823ce0;
+    background-color: #6828c4;
 }
 
 @media (max-width: 480px) {

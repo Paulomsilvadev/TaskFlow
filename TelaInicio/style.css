@@ -35,13 +35,7 @@ body {
     color: #883de5;
     text-decoration: none;
 }
-
-.nav-links {
-    display: flex;
-    gap: 35px;
-    list-style: none;
-}
-
+ 
 .nav-links a,
 .login {
     text-decoration: none;
@@ -78,8 +72,8 @@ body {
     justify-content: space-between;
     gap: 60px;
     background:
-        radial-gradient(circle at 10% 20%, #f5edff 0, transparent 30%),
-        radial-gradient(circle at 90% 85%, #f4edff 0, transparent 30%);
+    radial-gradient(circle at 10% 20%, #f5edff 0, transparent 30%),
+    radial-gradient(circle at 90% 85%, #f4edff 0, transparent 30%);
 }
 
 .hero-content {
