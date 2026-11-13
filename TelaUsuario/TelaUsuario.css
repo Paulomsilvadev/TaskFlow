@@ -1,21 +1,21 @@
 
-/* Remove as margens padrões do navegador */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f5fa;
     color: #333;
 }
 
-/* Cabeçalho */
+
 header {
-    background-color: #6558d3;
+    background-color: #883de5;
     color: white;
     padding: 20px;
     display: flex;
@@ -23,7 +23,7 @@ header {
     align-items: center;
 }
 
-/* Imagem do cabeçalho */
+
 header img {
     width: 180px;
     height: auto;
@@ -32,19 +32,19 @@ header img {
     display: block;
 }
 
-/* Nome do site */
+
 header h1 {
     font-size: 24px;
 }
 
-/* Links do menu */
+
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Área principal */
+
 main {
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ main {
     padding: 60px 20px;
 }
 
-/* Card de perfil */
+
 .perfil-card {
     width: 100%;
     max-width: 600px;
@@ -64,14 +64,14 @@ main {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Título */
+
 .perfil-card h2 {
     font-size: 26px;
     margin-bottom: 25px;
-    color: #6558d3;
+    color: #883de5;
 }
 
-/* Avatar */
+
 .avatar {
     width: 100px;
     height: 100px;
@@ -88,7 +88,7 @@ main {
     font-weight: bold;
 }
 
-/* Informações do usuário */
+
 .perfil-info {
     text-align: left;
     margin-top: 20px;
@@ -98,7 +98,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* Nome dos campos */
+
 .perfil-info label {
     display: block;
     margin-bottom: 8px;
@@ -107,7 +107,7 @@ main {
     font-weight: bold;
 }
 
-/* Informações exibidas */
+
 .perfil-info p {
     background-color: #f4f5fa;
     border: 1px solid #ccc;
@@ -117,7 +117,16 @@ main {
     font-size: 15px;
 }
 
-/* Área dos botões */
+.perfil-info input {
+    width: 100%;
+    padding: 12px;
+    background-color: #f4f5fa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+}
+
 .perfil-acoes {
     display: flex;
     flex-direction: column;
@@ -125,7 +134,7 @@ main {
     margin-top: 30px;
 }
 
-/* Estilo geral dos botões */
+
 .perfil-acoes button {
     width: 100%;
     padding: 13px;
@@ -136,30 +145,30 @@ main {
     transition: 0.3s;
 }
 
-/* Botão editar perfil */
+
 .btn-editar {
-    background-color: #6558d3;
+    background-color: #883de5;
     border: none;
     color: white;
 }
 
 .btn-editar:hover {
-    background-color: #4e3bb5;
+    background-color: #883de5;
 }
 
-/* Botão sair da conta */
+
 .btn-sair {
     background-color: transparent;
-    border: 1px solid #6558d3;
-    color: #6558d3;
+    border: 1px solid #883de5;
+    color: #883de5;
 }
 
 .btn-sair:hover {
-    background-color: #6558d3;
+    background-color: #883de5;
     color: white;
 }
 
-/* Responsividade */
+
 @media (max-width: 480px) {
     header {
         flex-direction: column;
