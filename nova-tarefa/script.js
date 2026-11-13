@@ -21,8 +21,14 @@ formTarefas.addEventListener('submit', (event) => {
 
     const tarefasCadastradas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
-    const novaTarefa = { titulo, descricao, dataInicio, dataConclusao,
-        id: Date.now(), usuarioEmail: usuarioLogado.emailUsuario, concluida: false
+    const novaTarefa = { 
+        titulo,
+        descricao, 
+        dataInicio, 
+        dataConclusao,
+        id: Date.now(), 
+        usuarioEmail: usuarioLogado.emailUsuario, 
+        concluida: false
     };
 
     tarefasCadastradas.push(novaTarefa);
