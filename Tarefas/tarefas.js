@@ -9,6 +9,12 @@ const botoesFiltro = document.querySelectorAll('[data-filtro]');
 
 let filtroAtual = 'todas';
 
+const nivelPrioridade = {
+    baixa: 'Baixa',
+    media: 'Média',
+    alta: 'Alta'
+};
+
 function formatarData(data) {
     if (!data) return 'Não informada';
     const [ano, mes, dia] = data.split('-');
@@ -39,6 +45,8 @@ function mostrarTarefas() {
     }
 
     tarefasFiltradas.forEach((tarefa) => {
+        const nivel = tarefa.prioridade || 'media';
+
         listaTarefas.innerHTML += `
             <article class="tarefa-item">
                 <div class="tarefa-info">
@@ -46,6 +54,10 @@ function mostrarTarefas() {
                     <p>${tarefa.descricao}</p>
                     <p>Início: ${formatarData(tarefa.dataInicio)} | Conclusão: ${formatarData(tarefa.dataConclusao)}</p>
                 </div>
+                
+                <span class="prioridade ${nivel}">
+                    Prioridade: ${nivelPrioridade[nivel]}
+                </span>
 
                 <span class="status ${tarefa.concluida ? 'concluida' : 'pendente'}">
                     ${tarefa.concluida ? 'Concluída' : 'Pendente'}

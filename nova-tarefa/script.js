@@ -13,6 +13,7 @@ formTarefas.addEventListener('submit', (event) => {
     const descricao = document.getElementById('descricaoTarefa').value.trim();
     const dataInicio = document.getElementById('dataInicio').value;
     const dataConclusao = document.getElementById('dataConclusao').value;
+    const prioridade = document.getElementById('prioridadeTarefa').value;
 
     if (dataConclusao < dataInicio) {
         alert("Digite uma data válida")
@@ -28,6 +29,7 @@ formTarefas.addEventListener('submit', (event) => {
         dataConclusao,
         id: Date.now(), 
         usuarioEmail: usuarioLogado.emailUsuario, 
+        prioridade,
         concluida: false
     };
 

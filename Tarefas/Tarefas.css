@@ -270,3 +270,27 @@ main {
         font-size: 12px;
     }
 }
+
+.prioridade {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+.prioridade.baixa {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.prioridade.media {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.prioridade.alta {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
