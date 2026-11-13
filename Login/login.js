@@ -39,7 +39,7 @@ formLogin.addEventListener('submit', (event) => {
             localStorage.removeItem('usuario_lembrado');
         }
 
-        // Redireciona para a tela de tarefas
+        
         window.location.href = '../Tarefas/Tarefas.html';
 
     } else {

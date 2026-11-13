@@ -112,11 +112,11 @@ body {
     cursor: pointer;
     font-weight: 600;
     margin: 10px 0;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .login:hover {
-    background-color: #823ce0;
+    background-color: #6828c4;
 }
 
 .registrar * {
