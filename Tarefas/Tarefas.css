@@ -24,14 +24,13 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 }
-/* Área principal */
+
 main {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
 }
 
-/* Card principal */
 .tarefas-card {
     width: 100%;
     max-width: 1100px;
@@ -41,7 +40,6 @@ main {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Cabeçalho */
 .tarefas-header h1 {
     color: #6554d9;
     font-size: 30px;
@@ -54,7 +52,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* Controles: filtros e botão */
 .tarefas-controles {
     display: flex;
     justify-content: space-between;
@@ -63,7 +60,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* Filtros */
 .filtros {
     display: flex;
     gap: 10px;
@@ -81,7 +77,7 @@ main {
     transition: 0.3s;
 }
 
-.filtros button:first-child {
+.filtros button.ativo {
     background-color: #6554d9;
     color: #ffffff;
 }
@@ -91,7 +87,6 @@ main {
     color: #ffffff;
 }
 
-/* Botão nova tarefa */
 .btn-nova-tarefa {
     padding: 12px 22px;
     background-color: #6554d9;
@@ -108,14 +103,12 @@ main {
     background-color: #5142bd;
 }
 
-/* Lista de tarefas */
 .lista-tarefas {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Card individual da tarefa */
 .tarefa-item {
     display: flex;
     justify-content: space-between;
@@ -133,7 +126,6 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
 }
 
-/* Informações da tarefa */
 .tarefa-info {
     flex: 1;
 }
@@ -149,7 +141,6 @@ main {
     font-size: 14px;
 }
 
-/* Status da tarefa */
 .status {
     padding: 9px 17px;
     border-radius: 25px;
@@ -168,14 +159,12 @@ main {
     color: #16803b;
 }
 
-/* Área dos botões */
 .tarefa-acoes {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Estilo geral dos botões */
 .tarefa-acoes button {
     padding: 10px 15px;
     border-radius: 8px;
@@ -187,7 +176,6 @@ main {
     white-space: nowrap;
 }
 
-/* Botão concluir */
 .btn-concluir {
     border: 1px solid #168b63;
     color: #168b63;
@@ -198,7 +186,6 @@ main {
     color: #ffffff;
 }
 
-/* Botão editar */
 .btn-editar {
     border: 1px solid #6554d9;
     color: #6554d9;
@@ -209,7 +196,6 @@ main {
     color: #ffffff;
 }
 
-/* Botão excluir */
 .btn-excluir {
     border: 1px solid #e53935;
     color: #e53935;
@@ -220,7 +206,6 @@ main {
     color: #ffffff;
 }
 
-/* Responsividade para tablets e celulares */
 @media (max-width: 850px) {
 
     .tarefas-controles {

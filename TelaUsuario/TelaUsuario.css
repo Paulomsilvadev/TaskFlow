@@ -1,32 +1,50 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    background-color: #6558d3;
-    color:white;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5fa;
+    color: #333;
+}
+
+
+header {
+    background-color: #883de5;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
-        width: 180px;
+}
+
+
+header img {
+    width: 180px;
     height: auto;
     max-height: 60px;
     object-fit: contain;
     display: block;
-    }
 }
 
-nav a{
-    color:white;
+
+header h1 {
+    font-size: 24px;
+}
+
+
+nav a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Área principal */
+
 main {
     display: flex;
     justify-content: center;
@@ -34,33 +52,33 @@ main {
     padding: 60px 20px;
 }
 
-/* Card de perfil */
+
 .perfil-card {
     width: 100%;
-    max-width: 420px;
-    padding: 35px;
-    background-color: #383838;
-    border-radius: 15px;
-    color: #ffffff;
+    max-width: 600px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    color: #333;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Título */
+
 .perfil-card h2 {
     font-size: 26px;
     margin-bottom: 25px;
-    color: #ffffff;
+    color: #883de5;
 }
 
-/* Avatar */
+
 .avatar {
     width: 100px;
     height: 100px;
     margin: 0 auto 25px;
     border-radius: 50%;
-    background-color: #6554d9;
-    color: #ffffff;
+    background-color: #6558d3;
+    color: white;
 
     display: flex;
     justify-content: center;
@@ -70,7 +88,7 @@ main {
     font-weight: bold;
 }
 
-/* Informações do usuário */
+
 .perfil-info {
     text-align: left;
     margin-top: 20px;
@@ -80,23 +98,35 @@ main {
     margin-bottom: 20px;
 }
 
+
 .perfil-info label {
     display: block;
     margin-bottom: 8px;
-    color: #cccccc;
-    font-size: 14px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
 }
 
+
 .perfil-info p {
-    background-color: #454545;
-    border: 1px solid #777777;
-    border-radius: 8px;
+    background-color: #f4f5fa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     padding: 12px;
-    color: #ffffff;
+    color: #333;
     font-size: 15px;
 }
 
-/* Área dos botões */
+.perfil-info input {
+    width: 100%;
+    padding: 12px;
+    background-color: #f4f5fa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+}
+
 .perfil-acoes {
     display: flex;
     flex-direction: column;
@@ -104,43 +134,47 @@ main {
     margin-top: 30px;
 }
 
-/* Estilo geral dos botões */
+
 .perfil-acoes button {
     width: 100%;
-    padding: 14px;
+    padding: 13px;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Botão editar perfil */
+
 .btn-editar {
-    background-color: #6554d9;
-    border: 1px solid #6554d9;
-    color: #ffffff;
+    background-color: #883de5;
+    border: none;
+    color: white;
 }
 
 .btn-editar:hover {
-    background-color: #5142bd;
-    border-color: #5142bd;
+    background-color: #883de5;
 }
 
-/* Botão sair da conta */
+
 .btn-sair {
     background-color: transparent;
-    border: 1px solid #ff5c5c;
-    color: #ff5c5c;
+    border: 1px solid #883de5;
+    color: #883de5;
 }
 
 .btn-sair:hover {
-    background-color: #ff5c5c;
-    color: #ffffff;
+    background-color: #883de5;
+    color: white;
 }
 
-/* Responsividade */
+
 @media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .perfil-card {
         padding: 25px 20px;
     }

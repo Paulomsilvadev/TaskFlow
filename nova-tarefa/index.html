@@ -1,82 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nova Tarefa | TaskFlow</title>
-
-    <!-- Conecta o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho do site -->
     <header>
         <img src="../img/TaskFlow Gradient Logo.png" alt="Logo TaskFlow">
 
-        <!-- Menu de navegação -->
         <nav>
-            <a href="../index.html">Início</a>
-            <a href="../nova-tarefa/index.html">Nova Tarefa</a>
+            <a href="../TelaInicio/index.html">Início</a>
+            <a href="./index.html">Nova Tarefa</a>
             <a href="../Tarefas/Tarefas.html">Tarefas</a>
             <a href="../TelaUsuario/TelaUsuario.html">Perfil</a>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
         <h2>Nova Tarefa</h2>
-
         <p>Organize suas atividades e não esqueça seus compromissos.</p>
 
-        <!-- Formulário de cadastro -->
         <form id="formTarefas">
-
             <label for="nomeTarefa">Nome da tarefa:</label>
-    
             <input
                 type="text"
                 id="nomeTarefa"
-                placeholder="Estudante"
+                placeholder="Nome da Tarefa"
                 required
             >
 
-            <label for="descricaodaTarefa">Descrição da Tarefa:</label>
+            <label for="descricaoTarefa">Descrição da Tarefa:</label>
+            <textarea
+                id="descricaoTarefa"
+                rows="4"
+                placeholder="Descreva os detalhes da tarefa..."
+                required
+                ></textarea>
 
-            <input type="text" 
-            id="nomeTarefa"
-            placeholder="Nome da Tarefa"
-            required
-            >
-    
-            <label for="datadeinico">Data de Inicio</label>
-
-            <input type="date"
-                   id="dataInicio"
-                   required>
-
-
-            <label for="dataTarefa">Data de conclusão:</label>
-
+            <label for="dataInicio">Data de Início:</label>
             <input
                 type="date"
-                id="dataTarefa"
+                id="dataInicio"
                 required
             >
 
-            <button type="submit">Cadastrar tarefa</button>
+            <label for="dataConclusao">Data de conclusão:</label>
+            <input
+                type="date"
+                id="dataConclusao"
+                required
+            >
 
+            <button type="submit"  class="cadastroNovaTarefa">Cadastrar tarefa</button>
         </form>
 
-        <!-- Mensagem do JavaScript -->
         <p id="mensagem"></p>
-
     </main>
 
-    <!-- Conecta o JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>

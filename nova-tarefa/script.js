@@ -1,28 +1,40 @@
-const formulario = document.getElementById("formTarefa");
-const nomeTarefa = document.getElementById("nomeTarefa");
-const dataTarefa = document.getElementById("dataTarefa");
-const mensagem = document.getElementById("mensagem");
+const usuarioLogado = JSON.parse(sessionStorage.getItem('usuarioLogado'));
 
-formulario.addEventListener("submit", function(event){
+if (!usuarioLogado) {
+    window.location.href = '../Login/login.html';
+}
 
-event.preventDefault();
+const formTarefas = document.querySelector('form')
 
-const nome = nomeTarefa.value.trim();
-const data = dataTarefa.value;
+formTarefas.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-let terafa = JSON.parse(localStorage.getItem("tarefa")) || [];
+    const titulo = document.getElementById('nomeTarefa').value.trim();
+    const descricao = document.getElementById('descricaoTarefa').value.trim();
+    const dataInicio = document.getElementById('dataInicio').value;
+    const dataConclusao = document.getElementById('dataConclusao').value;
 
-const novaTarefa ={
-    nome:nome,
-    data:data
-};
+    if (dataConclusao < dataInicio) {
+        alert("Digite uma data válida")
+        return;
+    }  
 
-tarefas.push(novaTarefa);
+    const tarefasCadastradas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
-localStorage.setItem("Tarefas", JSON.stringify(tarefas));
+    const novaTarefa = { 
+        titulo,
+        descricao, 
+        dataInicio, 
+        dataConclusao,
+        id: Date.now(), 
+        usuarioEmail: usuarioLogado.emailUsuario, 
+        concluida: false
+    };
 
-mensagem.textContent = "tarefa cadastrada com sucesso!";
+    tarefasCadastradas.push(novaTarefa);
 
-formulario.reset();
+    localStorage.setItem('tarefas', JSON.stringify(tarefasCadastradas));
 
-});
+    alert('Tarefa cadastrada com sucesso!')
+    window.location.href='../Tarefas/Tarefas.html';
+})
