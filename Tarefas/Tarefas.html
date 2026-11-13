@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas | TaskFlow</title>
+    <link rel="stylesheet" href="./Tarefas.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/TaskFlow Gradient Logo.png" alt="Logo do TaskFlow">
+
+        <nav>
+            <a href="../Index/index.html">Início</a>
+            <a href="../CadastroTarefa/CadastroTarefa.html">Nova Tarefa</a>
+            <a href="./Tarefas.html">Tarefas</a>
+            <a href="../TelaUsuario/TelaUsuario.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="tarefas-card">
+
+            <div class="tarefas-header">
+                <h1>Minhas Tarefas</h1>
+                <p>Gerencie suas tarefas cadastradas.</p>
+            </div>
+
+            <div class="tarefas-controles">
+
+                <div class="filtros">
+                    <button type="button" data-filtro="todas">
+                        Todas
+                    </button>
+
+                    <button type="button" data-filtro="pendentes">
+                        Pendentes
+                    </button>
+
+                    <button type="button" data-filtro="concluidas">
+                        Concluídas
+                    </button>
+                </div>
+
+                <a href="/CadastroTarefa/CadastroTarefa.html" class="btn-nova-tarefa">
+                    + Nova Tarefa
+                </a>
+
+            </div>
+
+            <!-- Os cards serão criados pelo JavaScript -->
+            <div class="lista-tarefas" id="lista-tarefas">
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="../Dados.js"></script>
+    <script src="./tarefas.js"></script>
+</body>
+
+</html>
