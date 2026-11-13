@@ -21,6 +21,14 @@ body {
     border-radius: 12px;
     padding: 30px 40px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    img{
+        width: 180px;
+        height: auto;
+        max-height: 60px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto ;
+    }
 }
 
 .container h1 {
